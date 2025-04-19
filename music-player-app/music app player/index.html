@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-theme="light">
+    <header>
+        <h1>Music Player</h1>
+        <button id="toggle-theme">Toggle Theme</button>
+    </header>
+    <main>
+        <section id="all-songs">
+            <h2>All Songs</h2>
+            <select id="genre-filter">
+                <option value="all">All</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+            </select>
+            <input type="text" id="search-song" placeholder="Search Song...">
+            <ul id="song-list"></ul>
+        </section>
+        <section id="song-card">
+            <h2>Now Playing</h2>
+            <img id="song-img" src="" alt="Song Image">
+            <p id="song-name"></p>
+            <p id="song-artist"></p>
+            <audio id="audio-player" controls></audio>
+            <button id="prev-song">Previous</button>
+            <button id="play-song">Play</button>
+            <button id="next-song">Next</button>
+            <button id="add-to-playlist">Add to Playlist</button>
+        </section>
+        <section id="playlist">
+            <h2>Playlists</h2>
+            <input type="text" id="playlist-name" placeholder="New Playlist Name">
+            <button id="create-playlist">Create Playlist</button>
+            <input type="text" id="search-playlist" placeholder="Search Playlist...">
+            <ul id="playlist-list"></ul>
+            <ul id="playlist-songs"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
